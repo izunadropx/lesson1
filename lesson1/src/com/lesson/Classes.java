@@ -37,7 +37,7 @@ class Person {
         public static void main(String[] args) {
 
             Person Person1 = new Person(); //using class Person to create a new Person Object
-            Person1.age = 32; //giving the variables a value
+            Person1.age = 32; //giving the properties a value
             Person1.name = "Joe Bloggs";// giving the name property a value
             Person1.speak();
             Person1.speak();

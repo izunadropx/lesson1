@@ -1,8 +1,8 @@
 package com.lesson;
 
 class Persona {
-    String name; //**
-    int age; //**
+    String name; //** - remember these are just references not the object itself
+    int age; //** These DO NOT include the result of methods
 
     void speak() {
         System.out.println("Hello, my name is: " + name);
@@ -19,10 +19,10 @@ class Persona {
         return age; //getting age from the top **
     }
 
-    String getName(){
+    String getName(){ //creating a method to get the name of Peronsa object - This is known as a get method
         return name; // getting name from the top **
     }
-}
+ }
 
 
 public class Settersandgetters {
@@ -31,11 +31,13 @@ public class Settersandgetters {
         Persona persona1 = new Persona();
         persona1.name = "Bob";
         persona1.age = 32;
-        int years = persona1.calculateYearsToRetirement(); //settings years to the return value of the method calculateYearsToRetirement
+        int years = persona1.calculateYearsToRetirement(); //settings years to the return value of the method calculateYearsToRetirement ***
         int age = persona1.getAge();//***
         String name = persona1.getName();//***
 
+
         System.out.println("Hi, my name is: " + name); //using name from here ***
         System.out.println("I am " + age + " years old!"); //using age from here ***
+        System.out.println("I can retire in " + years + " years");//using years from here ***
     }
 }
