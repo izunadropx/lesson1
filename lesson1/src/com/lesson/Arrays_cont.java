@@ -27,7 +27,7 @@ public class Arrays_cont {
         for (int row = 0; row < grid.length; row++) { // This is a nested loop which is needed to iterate through an array - This is using grid length as it is the outer most level of the array
             for (int col = 0; col < grid[row].length; col++) { // This is looping through the cols providing it is < row length after it stops
                 System.out.print(grid[row][col] + "\t"); // here were using print rather than println and using  \t we can tab it out and make it look nice
-                
+
             }
             System.out.println();
         }
