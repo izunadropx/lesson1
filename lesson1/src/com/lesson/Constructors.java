@@ -18,7 +18,7 @@ class Machine{
     }
 
     public Machine (String name, int code) {
-        this("Arnie"); // this is calling constructor 2 at the start of the constructor (3)
+        this("Arnie"); // this is calling constructor 2 at the start of the constructor (2)
         System.out.println("Constructor 3 running!");
         this.name = name;
         this.code = code;
