@@ -15,7 +15,7 @@ public class VIPCust {
     public VIPCust(String name, String email) {
         this(email, 10000, name);
         System.out.println(" 2nd constructor being called"); // this constructor already has some information being passed to it - email & name
-        System.out.println(name + "Your limit is: " + creditLimit + "Email: " + email);
+        System.out.println(name + "Your limit is: " + creditLimit + " Email: " + email);
     }
 
     public VIPCust() {
