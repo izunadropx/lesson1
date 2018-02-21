@@ -29,13 +29,25 @@ public class Dog extends Animal { // stating Dog is inheriting from Animal - we 
     }
 
     public void walk() {
-        move(5);
+        super.move(5); // this will tell it to use the move method from the super class (Parent)
         System.out.println("Dog.walk() called");
     }
 
     public void run() {
-        System.out.println("Dog.run() Called with speed of ");
+        System.out.println("Dog.run() Called");
         move(10);
 
+    }
+
+
+    private void moveLegs(int speed) {
+        System.out.println("Dog.moveLegs() Called");
+    }
+
+        @Override
+    public void move(int speed) {
+            System.out.println("Dog.move Called");
+            moveLegs(speed);
+            super.move(speed);
     }
 }
